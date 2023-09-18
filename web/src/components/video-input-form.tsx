@@ -99,7 +99,7 @@ export function VideoInputForm(props: VideoInputFormProps) {
     setStatus('uploading')
 
     const response = await api.post('/videos', data)
-    console.log(response)
+
     const videoId = response.data.video.id
 
     setStatus('generating')
